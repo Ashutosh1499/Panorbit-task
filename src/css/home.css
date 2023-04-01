@@ -1,0 +1,57 @@
+.homeContainer {
+    width: 100%;
+    height: 750px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.userListContainer {
+    width: 550px;
+    height: 500px;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    box-shadow: 0 0 25px 0 #727272;
+}
+.header {
+    height: 120px;
+}
+.header h1{
+    margin: 0;
+}
+.userListArea {
+    width: 100%;
+    height: 380px;
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+}
+.userList {
+    height: 330px;
+    overflow: auto;
+    width: 97%;
+}
+.eachUser {
+    height: 50px;
+    width: 97%;
+    border-bottom: 1px solid #d1d1d1;
+    cursor: pointer;
+}
+.userAvatar {
+    height: 100%;
+    width: 15%;
+}
+.userAvatar img {
+    height: 70%;
+    border-radius: 100%;
+}
+.userName {
+    width: 85%;
+    height: 100%;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+  background: #d1d1d1; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}

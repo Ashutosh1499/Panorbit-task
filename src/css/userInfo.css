@@ -1,0 +1,134 @@
+.dashboardContainer {    
+    width: 100%;
+    height: 720px;
+    background-color: #e4e4e4;
+}
+.dashboard {
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: white;
+}
+.sideBar {
+    width: 20%;
+    height: 100%;
+    background: rgb(55,91,200);
+    background: linear-gradient(212deg, rgba(55,91,200,1) 0%, rgba(97,57,200,1) 100%);
+    border-radius: 25px;
+}
+.homeIcon {
+    width: 100%;
+    height: 10%;
+}
+.tabContainer {
+    width: 100%;
+    height: 90%;
+}
+.tabsArea {
+    width: 100%;
+}
+.tabsArea hr {
+    width: 70%;
+    left: 50%;
+    border-color: #8f8f8f;
+}
+.tabs {
+    height: 50px;
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #8f8f8f;
+    cursor: pointer;
+}
+.active {
+    color: white;
+    font-weight: 600;
+}
+.tabs:hover {
+    color: #bbbbbb;
+}
+.active:hover {
+    color: white;
+}
+.dashboardTabContents {
+    width: 80%;
+    height: 100%;
+}
+.headerContents {
+    width: 100%;
+    height: 10%;
+}
+.headerContentsInner {
+    width: 90%;
+    height: 80%;
+    border-bottom: 1px solid #dadada;
+}
+.tabHeading {
+    width: 75%;
+    height: 100%;
+}
+.profileMenuArea {
+    width: 25%;
+    height: 100%;
+}
+.tabHeading h3 {
+    margin: 0;
+    margin-left: 25px;
+    color: #727272;
+}
+.dashboardTabBody {
+    width: 100%;
+    height: 90%;
+}
+.activeIndicator, .inactiveIndicator {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: -40px;
+    background-color: white;
+    margin-left: calc(100% - 35px);
+    border-radius: 100% 0 0 100%;
+}
+.activeIndicator::before, .inactiveIndicator::before , .activeIndicator::after, .inactiveIndicator::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: transparent;
+    transform: translate(15px, -20px);
+    border-radius: 0 0 100% 0;
+    box-shadow: 6px 6px 0 5px white;
+}
+.activeIndicator::after, .inactiveIndicator::after {
+    transform: translate(15px, 40px);
+    border-radius: 0 100% 0 0;
+    box-shadow: 6px -6px 0 5px white;
+}
+.inactiveIndicator {
+    margin-left: calc(100%);
+    border-radius: 0;
+}
+.hidden {
+    display: none;
+}
+@media screen and (max-width: 920px) {
+    .sideBar {
+        /* display: none; */
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        top: 5%;
+    }
+    .activeIndicator {
+        display: none;
+    }
+    .inactiveIndicator {
+        display: none;
+    }
+    .dashboardContainer {
+        height: 1440px;
+    }
+    .dashboard {
+        height: 95%;
+    }
+}

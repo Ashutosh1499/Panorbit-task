@@ -1,0 +1,75 @@
+.menuToggleArea {
+    width: 100%;
+    color: #727272;
+    cursor: pointer;
+}
+.picture img, .users img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.profileMenuContainer {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 99;
+    top: 15%;
+    background-color: white;
+    box-shadow: 0 0 50px 0 #e7e7e7;
+    border-radius: 25px;
+}
+.profileWrapper {
+    width: 90%;
+    height: 90%;
+}
+.upperDiv {
+    width: 100%;
+    height: 50%;
+}
+.bigPicture {
+    width: 100%;
+    height: 70%;
+}
+.bigPicture img {
+    height: 85%;
+    width: auto;
+    border-radius: 100%;
+}
+.profileName, .mailId {
+    width: 100%;
+    height: 15%;
+}
+.mailId {
+    color: #a0a0a0;
+    font-size: small;
+}
+.middleDiv, .lowerDiv {
+    width: 100%;
+    height: 25%;
+}
+.userProfile {
+    width: 100%;
+}
+.users {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #dadada;
+    cursor: pointer;
+}
+.lowerDiv button {
+    outline: none;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 25px;
+    background-color: #D55151;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+}
+.lowerDiv button:hover {
+    background-color: #ad3737;
+}
+.lowerDiv button:focus {
+    background-color: red;
+}

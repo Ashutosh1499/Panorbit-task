@@ -1,0 +1,121 @@
+.profileBody {
+    width: 100%;
+    height: 100%;
+}
+.mainInfoArea {
+    width: 40%;
+    height: 100%;
+}
+.detailsWrapper {
+    width: 90%;
+    height: 90%;
+    border-right: 1px solid #dadada;
+}
+.basicDetailsArea {
+    width: 90%;
+    height: 70%;
+    border-bottom: 1px solid #dadada;
+
+}
+.profilePicture {
+    width: 100%;
+    height: 50%;
+}
+.profilePicture img {
+    width: auto;
+    height: 100%;
+    border-radius: 100%;
+}
+.nameArea {
+    width: 100%;
+    height: 10%;
+    font-weight: 800;
+    color: #505050;
+}
+.detailSection {
+    width: 100%;
+}
+.companyDetailsArea {
+    width: 90%;
+    height: 30%;
+}
+.companyHeading {
+    height: 20%;
+    width: 100%;
+    color: #bbbbbb;
+    font-weight: 700;
+    font-size: larger;
+}
+.eachDetail {
+    width: 100%;
+    margin-bottom: 2px;
+}
+.title {
+    width: 30%;
+    padding: 5px;
+    padding-top: 0;
+    color: #bbbbbb;
+    font-weight: 700;
+}
+.coln {
+    width: 2%;
+    padding: 5px;
+    padding-top: 0;
+    color: #bbbbbb;
+    font-weight: 700;
+}
+.titleInfo {
+    width: 60%;
+    padding: 5px;
+    padding-top: 0;
+    font-weight: 700;
+    color: #505050;
+}
+.addressArea {
+    width: 60%;
+    height: 100%;
+}
+.addressHeading {
+    height: 5%;
+    font-weight: 700;
+    font-size: larger;
+    color: #bbbbbb;
+}
+.addressDetails {
+    width: 50%;
+    height: fit-content;
+}
+.addressMapVisual {
+    width: 100%;
+    height: 55%;
+}
+.addressMapVisual img {
+    height: 100%;
+    width: 90%;
+    border-radius: 25px;
+}
+.geoDetails {
+    width: 90%;
+}
+.geoDetailsInner {
+    width: 50%;
+}
+.hamBurger {
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 920px){
+    .hamBurger {
+        display: block;
+    }
+    .profileBody {
+        display: block;
+    }
+    .mainInfoArea, .addressArea {
+        width: 100%;
+        height: 50%;
+    }
+    .detailsWrapper {
+        border-right: none;
+    }
+}

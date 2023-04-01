@@ -1,0 +1,96 @@
+.chatboxContainer {
+    position: fixed;
+    width: 250px;
+    height: 400px;
+    top: calc(100% - 50px);
+    right: 10%;
+    cursor: pointer;
+    background-color: white;
+    border:1px solid #2C65C8;
+    border-radius: 10px 10px 0 0;
+}
+.chatboxWrapper {
+    width: 97%;
+    height: 95%;
+}
+.chatboxHeader {
+    background-color: #2C65C8;
+    border-radius: 10px 10px 0 0;
+    height: 50px;
+    color: white;
+}
+.arrowBox {
+    height: 50px;
+    width: 50px;
+}
+.chatListContainer {
+    width: 100%;
+    height: 350px;
+    overflow: auto;
+}
+.eachChat {
+    width: 100%;
+    height: 50px;
+}
+.name {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.chatStatus {
+    width: 50px;
+    cursor: pointer;
+}
+.chatPic {
+    width: 50px;
+}
+.chatPic img {
+    width: 50%;
+    border-radius: 100%;
+}
+.chatDetailContainer {
+    position: fixed;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    bottom: 0;
+    right: calc(10% + 280px);
+    background-color: white;
+    border:1px solid #2C65C8;
+    border-radius: 10px 10px 0 0;
+}
+.chatName {
+    width: 150px;
+}
+.chatMessagesContainer {
+    width: 98%;
+    height: 150px;
+    overflow: auto;
+}
+.miniMessage {
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 5px 5px 5px;
+    background-color: #dadada;
+    font-size: small;
+}
+.chatInput {
+    width: 100%;
+    height: 50px;
+    background-color: #dadada;
+    border-top: 1px solid #2C65C8;
+}
+.inputWrapper {
+    width: 100%;
+    height: 100%;
+}
+.chatInput input[type=text] {
+    width: 80%;
+    height: 70%;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    margin-right: 5px;
+}

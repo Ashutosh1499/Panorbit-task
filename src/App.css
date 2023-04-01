@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  transition-duration: 0.3s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fb {
   display: flex;
-  flex-direction: column;
+}
+.ac {
   align-items: center;
+}
+.as {
+  align-items: start;
+}
+.ae {
+  align-items: end;
+}
+.jc {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.js {
+  justify-content: start;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.je {
+  justify-content: end;
+}
+.jsa {
+  justify-content: space-around;
+}
+.jsb {
+  justify-content: space-between;
+}
+.jse {
+  justify-content: space-evenly;
+}
+.cmgsn {
+  width: 100%;
+  height: 100%;
+  color: #bbbbbb;
+  font-weight: 800;
+  font-size: xxx-large;
 }
