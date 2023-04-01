@@ -1,16 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Profile from './Profile';
 import ComingSoon from './ComingSoon';
 import { Home } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 
 export default function Sidebar({
-	reference,
 	setActiveTabComponent,
 	setActiveTab,
 	userData,
 	selectedId,
-	sideBarClass,
 }) {
 	// Handling tab switching animation.
 	const navigate = useNavigate();
@@ -36,19 +34,8 @@ export default function Sidebar({
 				console.log(0);
 		}
 	};
-	const emptyRef = useRef();
-	const [refs, setRefs] = useState(() =>
-		window.innerWidth < 920 ? reference : emptyRef,
-	);
-	useEffect(() => {
-		if (window.innerWidth < 920) {
-			setRefs(reference);
-		} else {
-			setRefs(emptyRef);
-		}
-	}, [setRefs, reference]);
 	return (
-		<div className={sideBarClass} ref={refs}>
+		<div className='sideBar'>
 			<div className='homeIcon fb ac jc'>
 				<Home
 					sx={{ color: 'white', cursor: 'pointer' }}
