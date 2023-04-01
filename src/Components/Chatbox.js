@@ -87,7 +87,7 @@ export default function Chatbox({ data, selectedId }) {
 						<div className='chatPic fb ac jc'>
 							<img src={data[selectedChat - 1].profilepicture} alt='' />
 						</div>
-						<div className='name'>{data[selectedChat].name}</div>
+						<div className='name'>{data[selectedChat - 1].name}</div>
 						<div className='chatStatus fb ac jc'>
 							<Close onClick={() => setSelectedChat('')} />
 						</div>
